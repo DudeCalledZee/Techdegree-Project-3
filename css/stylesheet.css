@@ -1,0 +1,168 @@
+/* base layout */
+
+font-family: "Merriweather", serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
+  padding: 0 20px 10px;
+  background: #11ccc1;
+}
+
+textarea {
+  width: 100%;
+  padding-left: 15px;
+}
+
+input {
+  padding-left: 15px;
+}
+
+button {
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #df4747;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #540505;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #540505;
+  color: #df4747;
+}
+
+footer {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+/* class selectors */
+
+.container input {
+  height: 2.5em;
+  margin-top: 5px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.line1 {
+  border: 5px solid black;
+  width: 81%;
+}
+
+.line2,
+.line3 {
+  border: 2px solid black;
+  width: 81.5%;
+}
+
+.contact-form,
+.newsletter {
+  margin-top: 2em;
+}
+
+.newsletter p {
+  margin-left: 2px;
+}
+
+.newsletter label {
+  padding-left: 1em;
+}
+
+.newsletter input {
+  margin-left: 5px;
+  margin-bottom: 1em;
+}
+
+/* id selectors */
+
+#title {
+  text-align: center;
+  margin-bottom: auto;
+  color: white;
+  background-color: rgb(38, 52, 66);
+  font-weight: bold;
+  margin-top: 0;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#contact,
+#newsletter-form {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#intro {
+  padding-top: 1.5em;
+}
+
+#intro,
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#intro p {
+  padding-bottom: 1.5em;
+}
+
+#state {
+  padding: 0.7em;
+  border-radius: 5px;
+  border-style: none;
+}
+
+#zip-code {
+  width: 50%;
+}
+
+/* pseudo class */
+
+.container ::placeholder {
+  text-align: right;
+}
+
+input:focus {
+  background-color: rgba(77, 180, 190, 0.8);
+}
+
+::placeholder {
+  font-style: italic;
+  padding-right: 5px;
+}
+
+option:first-child {
+  color: rgba(#464646, 0.63);
+}
+
+/* media queries */
+
+@media (min-width: 768px) {
+  .flex::before input {
+    flex-grow: 4;
+  }
+
+  form {
+    margin: auto;
+    width: 50%;
+  }
+}
