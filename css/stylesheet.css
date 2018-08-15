@@ -46,6 +46,10 @@ footer {
   color: rgba(0, 0, 0, 0.74);
 }
 
+textarea:focus {
+  background-color: rgba(77, 180, 190, 0.8);
+}
+
 /* class selectors */
 
 .container input {
@@ -129,6 +133,10 @@ h2 {
   border-style: none;
 }
 
+#state:focus {
+  background-color: rgba(77, 180, 190, 0.8);
+}
+
 #zip-code {
   width: 50%;
 }
@@ -158,13 +166,33 @@ option:first-child {
   .flex {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .flex label {
-    width: 30%;
+    width: 28%;
+    align-items: flex-start;
   }
 
-  .flex input {
+  .flex .col-right {
     width: 70%;
+  }
+
+  #state {
+    margin-top: 5px;
+    width: 72%;
+  }
+
+  form {
+    max-width: 800px;
+  }
+
+  .line1 {
+    width: 94.5%;
+  }
+
+  .line2,
+  .line3 {
+    width: 95%;
   }
 }
