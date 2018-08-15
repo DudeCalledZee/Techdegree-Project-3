@@ -1,9 +1,8 @@
 /* base layout */
 
-font-family: "Merriweather", serif;
-
 * {
   box-sizing: border-box;
+  font-family: "Merriweather", serif;
 }
 
 form {
@@ -149,15 +148,12 @@ h2 {
 
 input:focus {
   background-color: rgba(77, 180, 190, 0.8);
+  border: 2px solid red;
 }
 
 ::placeholder {
   font-style: italic;
   padding-right: 5px;
-}
-
-option:first-child {
-  color: rgba(#464646, 0.63);
 }
 
 /* media queries */
@@ -180,7 +176,7 @@ option:first-child {
 
   #state {
     margin-top: 5px;
-    width: 72%;
+    width: 70%;
   }
 
   form {
