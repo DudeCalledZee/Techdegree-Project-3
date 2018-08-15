@@ -2,9 +2,7 @@
 
 font-family: "Merriweather", serif;
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
@@ -157,12 +155,16 @@ option:first-child {
 /* media queries */
 
 @media (min-width: 768px) {
-  .flex::before input {
-    flex-grow: 4;
+  .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  form {
-    margin: auto;
-    width: 50%;
+  .flex label {
+    width: 30%;
+  }
+
+  .flex input {
+    width: 70%;
   }
 }
