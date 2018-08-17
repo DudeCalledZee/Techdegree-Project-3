@@ -49,6 +49,7 @@ footer {
 
 textarea:focus {
   background-color: rgba(77, 180, 190, 0.8);
+  transition-duration: 1s;
 }
 
 /* class selectors */
@@ -140,6 +141,7 @@ h2 {
 
 #state:focus {
   background-color: rgba(77, 180, 190, 0.8);
+  transition-duration: 1s;
 }
 
 #zip-code {
@@ -155,6 +157,7 @@ h2 {
 input:focus {
   background-color: rgba(77, 180, 190, 0.8);
   border: 2px solid red;
+  transition-duration: 1s;
 }
 
 ::placeholder {
