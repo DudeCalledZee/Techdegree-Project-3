@@ -31,19 +31,19 @@
 
       <div class="flex container">
         <label class="col-left" for="name">Full Name</label>
-        <input class="col-right" type="text" id="name" placeholder="Required" required><br>
+        <input class="col-right" type="text" id="name" name="user_name" placeholder="Required" required><br>
 
         <label class="col-left" for="email">Email Address</label>
-        <input class="col-right" type="email" id="email" placeholder="Required" required><br>
+        <input class="col-right" type="email" id="email" name="user_email" placeholder="Required" required><br>
 
         <label class="col-left" for="phone">Phone Number</label>
-        <input class="col-right" type="tel" id="phone"><br>
+        <input class="col-right" type="tel" id="phone" name="user_phone"><br>
 
         <label class="col-left" for="address">Street Address</label>
-        <input class="col-right" type="text" id="address"><br>
+        <input class="col-right" type="text" id="address" name="user_address"><br>
 
         <label class="col-left" for="city">City</label>
-        <input class="col-right" type="text" id="city"><br>
+        <input class="col-right" type="text" id="city" name="user_city"><br>
 
         <label class="col-left" for="state">State</label>
         <select class="col-right" name="state" id="state">
@@ -56,7 +56,7 @@
       </select><br>
 
         <label class="col-left" for="zip-code">Zip Code</label>
-        <input class="col-right" type="text" id="zip-code"><br>
+        <input class="col-right" type="text" id="zip-code" name="user_zip"><br>
       </div>
     </fieldset>
 
@@ -72,14 +72,9 @@
       <p>Newsletter format</p>
       <input type="radio" id="html-letter" name="format" value="html"><label for="html-letter">HTML</label><br>
       <input type="radio" id="text-letter" name="format" value="plain"><label for="text-letter">Plain text</label><br>
-      <p>Other topics you'd like to hear about</p>
-      <textarea name="other" rows="8" cols="30" placeholder="We would love to hear from you"></textarea><br>
-    </fieldset>
-
-    <br>
-
-    <fieldset class="button">
-      <button type="submit" name="signup">Sign Up</button>
+      <label for="text-area">Other topics you'd like to hear about</label>
+      <textarea id="text-area" name="other" rows="8" cols="30" placeholder="We would love to hear from you"></textarea><br>
+      <button class="button" type="submit" name="signup" id="button">Sign Up</button>
     </fieldset>
   </form>
   <footer>

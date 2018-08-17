@@ -23,6 +23,7 @@ input {
 }
 
 button {
+  margin-top: 1.5em;
   padding: 20px 40px;
   color: #fff;
   background-color: #df4747;
@@ -33,6 +34,7 @@ button {
   border: 1px solid #540505;
   border-width: 1px 1px 3px;
   margin-bottom: 10px;
+  transition-duration: 2s;
 }
 
 button:hover {
@@ -124,6 +126,10 @@ h2 {
 
 #intro p {
   padding-bottom: 1.5em;
+}
+
+#text-area {
+  margin-top: 0.2em;
 }
 
 #state {
